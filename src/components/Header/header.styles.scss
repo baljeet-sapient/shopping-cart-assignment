@@ -4,7 +4,6 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 0 5rem;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   .header__left {
     display: flex;
@@ -25,8 +24,6 @@
 
   .header__cartIcon {
     height: 100%;
-    // position: absolute;
-    // right: 0px;
     .header__options {
       height: 40%;
       display: flex;
@@ -62,9 +59,8 @@
 
 @media screen and (max-device-width: 480px) {
   .header {
-    height: 2.2rem;
+    height: 3rem;
     text-align: center;
-    padding: 0;
 
     .header__links {
       display: none;
@@ -85,6 +81,5 @@
   .header {
     height: 3.8rem;
     text-align: center;
-    padding: 0 2rem;
   }
 }

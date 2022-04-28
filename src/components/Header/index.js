@@ -4,7 +4,7 @@ import "./header.styles.scss";
 
 const Index = () => {
   return (
-    <div className="header">
+    <nav className="header container">
       <div className="header__left">
         <img
           className="img-container"
@@ -28,7 +28,7 @@ const Index = () => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
