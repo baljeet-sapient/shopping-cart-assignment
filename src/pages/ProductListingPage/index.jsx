@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { fetchProductsData } from "../../redux/products/products.actions";
 import ProductListing from "../../components/ProductListing";
+import ProductPage from "../../components/ProductPage";
 
 const Index = () => {
   const dispatch = useDispatch();
@@ -23,12 +24,10 @@ const Index = () => {
         path={`/`}
         element={<ProductListing productData={productData} />}
       />
-      {/* <Route
+      <Route
         path={`/:productId`}
-        element={
-          <ProductPage {...routeProps} productData={productData} {...props} />
-        }
-      ></Route> */}
+        element={<ProductPage productData={productData} />}
+      ></Route>
     </Routes>
   );
 };

@@ -1,7 +1,23 @@
 import React from "react";
+import "./dropdown.styles.scss";
 
-const Index = () => {
-  return <div>Dropdown</div>;
+const DropDown = ({ categoryData, productId, defaultSelected, ...props }) => {
+  return (
+    <select
+      onChange={props.handleDropDownChange}
+      className="dropdown__menu"
+      value={productId ? productId : "Default"}
+    >
+      <option value="Default">All</option>
+      {categoryData.map((category) =>
+        category.enabled ? (
+          <option key={category.id} value={category.id}>
+            {category.name}
+          </option>
+        ) : null
+      )}
+    </select>
+  );
 };
 
-export default Index;
+export default DropDown;
