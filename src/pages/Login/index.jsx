@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import "./login.styles.scss";
+import LoginForm from "../../components/LoginForm";
 
 const Index = () => {
   return (
-    <div>Login Page</div>
-  )
-}
+    <div className="container login__container">
+      <LoginForm />
+    </div>
+  );
+};
 
-export default Index
+export default Index;
