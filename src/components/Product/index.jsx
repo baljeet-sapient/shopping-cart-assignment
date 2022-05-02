@@ -1,8 +1,12 @@
 import React from "react";
 import "./product.styles.scss";
 import Button from "../Button";
+import { useDispatch } from "react-redux";
+import { addItem } from "../../redux/cart/cart.actions";
 
-const Index = ({ product, addItem, ...props }) => {
+const Index = ({ product, ...props }) => {
+  const dispatch = useDispatch();
+
   return (
     <section className="product">
       <h4>{product.name}</h4>
@@ -19,14 +23,17 @@ const Index = ({ product, addItem, ...props }) => {
           <div className="product_btns">
             <div className="product__btnBig">
               <span>MRP Rs.{product.price}</span>
-              <Button className="btn__big" onClick={() => addItem(product)}>
+              <Button
+                className="btn__big"
+                onClick={() => dispatch(addItem(product))}
+              >
                 Buy Now
               </Button>
             </div>
 
             <Button
               className="product__btnSmall"
-              onClick={() => addItem(product)}
+              onClick={() => dispatch(addItem(product))}
             >
               Buy Now @ Rs.{product.price}
             </Button>
