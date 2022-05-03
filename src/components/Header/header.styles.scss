@@ -18,7 +18,7 @@
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      font-weight: 700;
+      margin-left: 50px;
     }
   }
 
@@ -29,7 +29,6 @@
       display: flex;
       width: 100%;
       justify-content: flex-end;
-      font-weight: 700;
       a {
         padding-top: 0;
         padding-right: 0;
@@ -42,9 +41,13 @@
         height: 100%;
         display: flex;
         align-items: center;
-        background-color: grey;
+        justify-content: space-evenly;
+        background-color: lightgrey;
         img {
-          width: 2rem;
+          width: 1.8rem;
+        }
+        span {
+          font-size: 0.9rem;
         }
       }
     }

@@ -33,13 +33,13 @@ const Index = () => {
       </div>
       <div className="header__cartIcon">
         <div className="header__options">
-          <Link to="/login">Sign In</Link>
+          <Link to="/login">SignIn</Link>
           <Link to="/register">Register</Link>
         </div>
         <div className="cart" onClick={toggleCart}>
           <div className="cartDisplayContent">
             <img src="static/images/cart.svg" alt="Cart Icon" />
-            <span>{itemCount} Items</span>
+            <span>{itemCount} items</span>
           </div>
         </div>
       </div>
