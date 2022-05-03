@@ -1,0 +1,14 @@
+.register__container {
+  overflow: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .register__container {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .register__container {
+  }
+}
