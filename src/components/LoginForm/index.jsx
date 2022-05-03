@@ -50,7 +50,7 @@ const Index = ({}) => {
     <div className="login">
       <div className="login__content">
         <h2 className="title">Login</h2>
-        <span>Get access to your Orders, Wishlist and Recommensations</span>
+        <span>Get access to your Orders, Wishlist and Recommendations</span>
       </div>
       <form onSubmit={handleSubmit} className="login__form">
         <Input
